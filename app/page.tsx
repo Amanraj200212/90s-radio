@@ -5,7 +5,7 @@ import type { YouTubeProps } from "react-youtube";
 import OnlineCount from "./component/OnlineCount";
 import MusicPlayer from "./component/MusicPlayer";
 import YoutubePlayer from "./component/YoutubePlayer";
-import { songs } from "@/data";
+import { songs } from "./data/songs";
 import Image from "next/image";
 import CurrentTime from "./component/CurrentTime";
 import Link from "next/link";
@@ -84,6 +84,7 @@ export default function Home() {
         </div>
 
         <p className="corner-note">made for long drives &amp; late nights</p>
+        <p className="absolute right-0 bottom-0 text-xs underline text-white/10 pr-2">@Developed By Aman Gupta</p>
       </div>
     </main>
   );

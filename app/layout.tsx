@@ -5,6 +5,7 @@ import { ConvexClientProvider } from "./ConvexClientProvider";
 export const metadata: Metadata = {
   title: "90s Something — Internet Radio",
   description: "A little radio for long drives and late nights.",
+  
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
