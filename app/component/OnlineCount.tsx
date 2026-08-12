@@ -46,7 +46,7 @@ function PresenceCounter({ userId }: { userId: string }) {
 
   return (
     <div className="flex items-center gap-2 text-sm text-white">
-      <span className="h-2 w-2 rounded-full bg-green-400" />
+      <span className="h-2 w-2 rounded-full bg-green-700 shadow-[0_0_8px_rgba(74,222,128,0.8)] animate-pulse" />
       <span>{onlineUsers.length} online</span>
     </div>
   );

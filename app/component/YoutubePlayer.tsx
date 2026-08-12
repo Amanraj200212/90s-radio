@@ -8,7 +8,7 @@ type Props = {
   onEnd?: YouTubeProps["onEnd"];
 };
 
-const YoutubePlayers = ({ videoId, onReady, onEnd }: Props) => {
+const YoutubePlayer = ({ videoId, onReady, onEnd }: Props) => {
   const options: YouTubeProps["opts"] = {
     width: "100%",
     height: "100%",
@@ -34,4 +34,4 @@ const YoutubePlayers = ({ videoId, onReady, onEnd }: Props) => {
   );
 };
 
-export default YoutubePlayers;
+export default YoutubePlayer;
