@@ -25,7 +25,7 @@ export default function Home() {
   const prevSong = () => changeSong((currentSong - 1 + songs.length) % songs.length);
 
   return (
-    <main className="isolate relative min-h-screen overflow-hidden bg-black p-5">
+    <main className="isolate relative min-h-screen overflow-hidden bg-black">
       <Image
         src="/world.jpg"
         alt="home_bg" 
