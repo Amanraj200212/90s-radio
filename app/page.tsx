@@ -17,6 +17,7 @@ export default function Home() {
   const [currentSong, setCurrentSong] = useState(0);
   const currentSongRef = useRef(0);
 
+  //forchangesong
   const changeSong = (index: number) => {
     currentSongRef.current = index;
     setCurrentSong(index);
