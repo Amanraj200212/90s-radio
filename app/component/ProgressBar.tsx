@@ -75,8 +75,11 @@ const ProgressBar = ({player}: Props) => {
           }}
         />
       </span>
-      <time>{currentTime ? `${formatTime(currentTime)}` : '00:00'}</time>
-      <time> {duration ? `${formatTime(duration)}`: '00:00'}</time>
+      <div className="flex items-center justify-center gap-2">
+        <p>{currentTime ? `${formatTime(currentTime)}` : '00:00'}</p>
+        <p>/</p>
+        <p>{duration ? `${formatTime(duration)}`: '00:00'}</p>
+      </div>
     </div>
   )
 }

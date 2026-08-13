@@ -75,7 +75,6 @@ const togglePlayback = () => {
             <h2>{title}</h2>
             <p>{artist}</p>
           </div>
-          <span className="track-count">{String(trackNumber).padStart(2, "0")}</span>
         </div>
 
         <ProgressBar player={player}/>
