@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import {useRef, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import OnlineCount from "./component/OnlineCount";
 import MusicPlayer from "./component/MusicPlayer";
@@ -15,14 +15,27 @@ type Player = Parameters<NonNullable<YouTubeProps["onReady"]>>[0]["target"];
 export default function Home() {
   const [player, setPlayer] = useState<Player | null>(null);
   const [currentSong, setCurrentSong] = useState(0);
+  const currentSongRef = useRef(0);
 
   const changeSong = (index: number) => {
+    currentSongRef.current = index;
     setCurrentSong(index);
     player?.loadVideoById(songs[index].videoId);
   };
 
-  const nextSong = () => changeSong((currentSong + 1) % songs.length);
-  const prevSong = () => changeSong((currentSong - 1 + songs.length) % songs.length);
+  const nextSong = () => {
+    const nextIndex =
+      (currentSongRef.current + 1) % songs.length;
+
+    changeSong(nextIndex);
+  };
+
+const prevSong = () => {
+  const prevIndex =
+    (currentSongRef.current - 1 + songs.length) % songs.length;
+
+  changeSong(prevIndex);
+};
 
   return (
     <main className="isolate relative min-h-screen overflow-hidden bg-black">
@@ -66,6 +79,7 @@ export default function Home() {
 
         <div className="hidden-player" aria-hidden="true">
           <YoutubePlayer
+            key={currentSong}
             videoId={songs[currentSong].videoId}
             onReady={(event) => setPlayer(event.target)}
             onEnd={nextSong}

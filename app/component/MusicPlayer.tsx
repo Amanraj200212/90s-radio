@@ -1,7 +1,7 @@
 "use client";
 
 import { Pause, Play, SkipBack, SkipForward } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import ProgressBar from "./ProgressBar";
 
@@ -24,16 +24,31 @@ export default function MusicPlayer({
 }: Props) {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const togglePlayback = () => {
-    if (isPlaying) {
-      player?.pauseVideo();
-      setIsPlaying(false);
-      return;
-    }
+  //ask youtube is ideo playing or not
+  useEffect(() => {
+  if (!player) return;
 
-    player?.playVideo();
-    setIsPlaying(true);
+  const updateState = () => {
+    setIsPlaying(player.getPlayerState() === 1);
   };
+
+  updateState();
+
+  const interval = setInterval(updateState, 300);
+
+  return () => clearInterval(interval);
+}, [player]);
+
+const togglePlayback = () => {
+  if (!player) return;
+  const state = player.getPlayerState();
+
+  if (state === 1) {
+    player.pauseVideo();
+  } else {
+    player.playVideo();
+  }
+};
 
   return (
     <section className="music-player" aria-label="Music player">
