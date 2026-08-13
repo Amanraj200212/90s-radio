@@ -22,7 +22,6 @@ export default function MusicPlayer({
   onPrev,
   title,
   artist,
-  trackNumber,
   videoId,
 }: Props) {
   const [isPlaying, setIsPlaying] = useState(false);
