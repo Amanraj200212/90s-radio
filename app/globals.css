@@ -116,3 +116,23 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-subtitle { margin-top: 1.15rem; }
   .presence { top: 3.6rem; }
 }
+
+/* for roatating disc player */
+@keyframes smooth-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.smooth-rotate {
+  animation: smooth-rotate 12s linear infinite;
+  animation-play-state: paused;
+}
+
+.smooth-rotate.playing {
+  animation-play-state: running;
+}

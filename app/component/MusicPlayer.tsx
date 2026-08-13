@@ -39,20 +39,23 @@ export default function MusicPlayer({
   return () => clearInterval(interval);
 }, [player]);
 
+const [startRotate, setStartRotate] = useState(false)
 const togglePlayback = () => {
   if (!player) return;
   const state = player.getPlayerState();
 
   if (state === 1) {
     player.pauseVideo();
+    setStartRotate(false)
   } else {
     player.playVideo();
+    setStartRotate(true)
   }
 };
 
   return (
     <section className="music-player" aria-label="Music player">
-      <div className="album-art animate-spin [animation-duration:8s]" aria-hidden="true">
+      <div className={`album-art smooth-rotate ${startRotate ? 'playing' : ''}`} aria-hidden="true">
         <span>90s</span>
         <i />
         <b>{String(trackNumber).padStart(2, "0")}</b>
