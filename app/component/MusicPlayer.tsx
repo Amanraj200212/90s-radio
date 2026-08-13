@@ -4,6 +4,7 @@ import { Pause, Play, SkipBack, SkipForward } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import ProgressBar from "./ProgressBar";
+import Image from "next/image";
 
 type Props = {
   player: Parameters<NonNullable<YouTubeProps["onReady"]>>[0]["target"] | null;
@@ -12,6 +13,7 @@ type Props = {
   title: string;
   artist: string;
   trackNumber: number;
+  videoId: string;
 };
 
 export default function MusicPlayer({
@@ -21,6 +23,7 @@ export default function MusicPlayer({
   title,
   artist,
   trackNumber,
+  videoId,
 }: Props) {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -55,10 +58,14 @@ const togglePlayback = () => {
 
   return (
     <section className="music-player" aria-label="Music player">
-      <div className={`album-art smooth-rotate ${startRotate ? 'playing' : ''}`} aria-hidden="true">
-        <span>90s</span>
-        <i />
-        <b>{String(trackNumber).padStart(2, "0")}</b>
+      <div className="album-art" aria-hidden="true">
+        <Image
+          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+          alt={title}
+          fill
+          className={`object-cover smooth-rotate ${startRotate ? 'playing' : ''}`}
+        />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/70 ring-2 ring-white/40"/>
       </div>
 
       <div className="track-details">

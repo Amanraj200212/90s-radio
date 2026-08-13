@@ -94,6 +94,7 @@ const prevSong = () => {
             title={songs[currentSong].title}
             artist={songs[currentSong].artist}
             trackNumber={currentSong + 1}
+            videoId={songs[currentSong].videoId}
           />
         </div>
 
