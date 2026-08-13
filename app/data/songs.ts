@@ -1,5 +1,10 @@
 export const songs = [
   {
+    "title": "The Child In Us",
+   "artist": "Enigma",
+   "videoId": "32uTT424Nx4",
+  },
+  {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "videoId": "SBfPs-PMGTA"
@@ -23,11 +28,6 @@ export const songs = [
     "title": "Aankhon Se Tune Kya Keh Diya",
     "artist": "Kumar Sanu, Alka Yagnik",
     "videoId": "RlSRxyxFwXI"
-  },
-  {
-    "title": "Mera Dil Bhi Kitna Pagal Hai",
-    "artist": "Kumar Sanu, Alka Yagnik",
-    "videoId": "DIvHIjOYq3U"
   },
   {
     "title": "Dheere Dheere Se Meri Zindagi Mein Aana",

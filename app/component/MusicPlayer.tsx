@@ -52,7 +52,7 @@ const togglePlayback = () => {
 
   return (
     <section className="music-player" aria-label="Music player">
-      <div className="album-art" aria-hidden="true">
+      <div className="album-art animate-spin [animation-duration:8s]" aria-hidden="true">
         <span>90s</span>
         <i />
         <b>{String(trackNumber).padStart(2, "0")}</b>
