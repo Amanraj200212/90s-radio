@@ -10,10 +10,6 @@ const Header = () => {
           <div className="font-bold"><OnlineCount /></div>
 
           <div className=" flex items-center gap-6">
-            {/* <Link  href="https://open.spotify.com" target="_blank" rel="noreferrer">
-              <span className="service-mark spotify-mark" aria-hidden="true">◔</span>
-              <span>Spotify ↗</span>
-            </Link> */}
             <PlayListSwitcher />
             <Link href="https://music.youtube.com" className='hidden md:inline-flex' target="_blank" rel="noreferrer">
               <span className="service-mark youtube-mark mr-2" aria-hidden="true">▶</span>

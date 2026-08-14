@@ -3792,3 +3792,162 @@ export const songs = [
     "videoId": "3-mpxSFmN3Q"
   },
 ] as const;
+
+export const playlists = {
+  classical: [
+    {
+    "title": "The Child In Us - [ Prasanna vadanaaM saubhaagyadaaM bhaagyadaaM]",
+    "artist": "Enigma",
+    "videoId": "32uTT424Nx4",
+  },
+  {
+    "title": "Chand Tare Phool - 4K Video | Tum Se Achcha Kaun Hai | Nakul Kapoor | 90&#39;s Best Romantic Songs",
+    "artist": "Ishtar Music",
+    "videoId": "BtdiNnrftYM",
+  },
+  {
+    "title": "Ho Gaya Hai Tujhko | Full Song | Dilwale Dulhania Le Jayenge, Shah Rukh Khan, Kajol, Lata Mangeshkar",
+    "artist": "YRF",
+    "videoId": "hw_HpTI_Wkw",
+  },
+  {
+    "title": "Chura Ke Dil Mera - 4K VIDEO | Akshay &amp; Shilpa | Main Khiladi Tu Anari | Kumar Sanu &amp; Alka Yagnik",
+    "artist": "Ishtar Music",
+    "videoId": "Yqj1_V90KJo",
+  },
+  {
+    "title": "Mere Mehboob Qayamat Hogi  (Original) - Mr. X In Bombay - Kishore Kumar's Greatest Hits - Old Songs",
+    "artist": "Bollywood Classics",
+    "videoId": "yIzCBU0_LyY"
+  },
+  {
+    "title": "Lag Jaa Gale - Sadhana, Lata Mangeshkar, Woh Kaun Thi Romantic Song",
+    "artist": "Ultra Bollywood",
+    "videoId": "A9arc2hWNOw"
+  },
+  {
+    "title": "छुप गए सारे नज़ारे | Chhup Gaye Sare Nazare | Do Raaste | Rajesh Khanna | Mumtaz | Evergreen Songs",
+    "artist": "Shemaroo Filmi Gaane",
+    "videoId": "1lyJyjSezC8"
+  },
+  ],
+  romantic: [ 
+  {
+    "title": "Na To Dard Gaya |  Lata Mangeshkar | Kali Topi Laal Rumal 1959 Songs | Shakeela, Chandrasekhar",
+    "artist": "Goldmines Gaane Sune Ansune",
+    "videoId": "WRBgWcx09MA"
+  },
+  {
+    "title": "Milte Hi Nazar Tum Se (HD) - Ustaadon Ke Ustad Song - Pradeep Kumar - Shakila - Qawwali Song",
+    "artist": "Shemaroo Filmi Gaane",
+    "videoId": "Uq9ViYM7lTQ"
+  },
+  {
+    "title": "Suhana Safar Aur Ye - Madhumati Songs - Dilip Kumar - Vyjayantimala - Mukesh",
+    "artist": "Shemaroo Filmi Gaane",
+    "videoId": "aSU74fpWsfQ"
+  },
+  {
+    "title": "ek tera sath hamko do jahan se pyara hai_ Wapas1969_Ajay& Alka_ Rafi_Lata _Majrooh_Laxmi-Pyare_a tri",
+    "artist": "mastkalandr",
+    "videoId": "_2I6inFlQR4"
+  },
+  {
+    "title": "Woh Dil Kaha Se Laaon | Full Video | Bharosa | Guru Dutt | Asha Parekh | Lata Mangeshkar",
+    "artist": "Saregama Music",
+    "videoId": "pDRGaT03JFo"
+  },
+  {
+    "title": "Reshami Salawaar Kurta Jaali Ka | Naya Daur (1957) | Minoo Mumtaz | Kumkum |  Shamshad Begum",
+    "artist": "Shemaroo Filmi Gaane",
+    "videoId": "Mc-kOorQ040"
+  },
+  {
+    "title": "Chal Ri Sajni Ab Kya Soche - Dev Anand - Suchitra Sen - Bambai Ka Babu - Bidaai Songs",
+    "artist": "Shemaroo Filmi Gaane",
+    "videoId": "4COlOullXhE"
+  },
+  {
+    "title": "Babul Ki Duwayein II - Waheeda Rehman - Balraj Sahni - Neel Kamal - Old Hindi Songs - Mohd Rafi",
+    "artist": "Shemaroo Filmi Gaane",
+    "videoId": "-8KeBXm6gYU"
+  },
+  {
+    "title": "Mujhko Apne Gale Laga Lo Aye Mere Humrahi | Mohammed Rafi | Hamrahi 1963 Songs | Rajendra Kumar",
+    "artist": "Goldmines Gaane Sune Ansune",
+    "videoId": "ZPql6bs_4Dc"
+  },
+  ],
+  trendy: [
+      {
+    "title": "Tod Diya Dil Mera Tune | Lata Mangeshkar | Nargis | Andaz (1949) | Naushad | Evergreen Classic Song",
+    "artist": "Shemaroo musics",
+    "videoId": "_T24UUmJ3v8"
+  },
+  {
+    "title": "Golden 40s Hit – Ankhiyan Mila Ke | Rattan | Vintage Bollywood Music",
+    "artist": "Shemaroo musics",
+    "videoId": "F4CoRaWTmug"
+  },
+  {
+    "title": "Piya Piya Piya Mera Jiya Pukare | Baap Re Baap (1955) | Kishore Kumar, Asha Bhosle | Old Hindi Songs",
+    "artist": "Shemaroo musics",
+    "videoId": "Ols2-VvyQdk"
+  },
+  {
+    "title": "Old is Gold | Gaao Tarane Mann Ke | Aan (1952) | Rafi & Lata | Dilip Kumar, Nadira",
+    "artist": "Shemaroo musics",
+    "videoId": "fpDXSYH9fvo"
+  },
+  {
+    "title": "Mohammed Rafi Evergreen Old Hindi Songs | Janewalon Zara Mud Ke Dekho Mujhe",
+    "artist": "Shemaroo musics",
+    "videoId": "2mTJ4gDdUos"
+  },
+  {
+    "title": "Evergreen Bollywood Melody | Aye Dil Ab Kahin Lye Jaa | Shammi Kapoor Classic Hit",
+    "artist": "Shemaroo musics",
+    "videoId": "-6MjCY4raKA"
+  },
+  {
+    "title": "Dil Ko Hua Tum Se Pyar | Aan Movie Song | Dilip Kumar, Nadira | Mohammed Rafi Hit",
+    "artist": "Shemaroo musics",
+    "videoId": "7NWcXbKoV2A"
+  },
+  {
+    "title": "शम्मी-आशा का रोमांटिक अंदाज़ | Hum Aur Tum Aur Ye Sama | Dil Deke Dekho | Rafi Evergreen",
+    "artist": "Shemaroo musics",
+    "videoId": "ByUbwOja0PU"
+  },
+  {
+    "title": "Gore Gore O Banke Chhore | Retro Bollywood Charm | Lata Mangeshkar Evergreen",
+    "artist": "Shemaroo musics",
+    "videoId": "6KtN8Aj-Phc"
+  },
+  {
+    "title": "Mohd. Rafi’s Emotional Gem | Chahunga Main Tujhe Saanjh Savere | Dosti",
+    "artist": "Shemaroo musics",
+    "videoId": "u6l9cPohem8"
+  },
+  {
+    "title": "Classic Mohd Rafi Song - Mera To Jo Bhi Kadam Hai | Dosti 1964",
+    "artist": "Shemaroo musics",
+    "videoId": "5TG0YJrAqtw"
+  },
+  {
+    "title": "Vintage Bollywood Romance - Mohabbat Chume Jinke Haath | Mohd. Rafi",
+    "artist": "Shemaroo musics",
+    "videoId": "vNo6Thez84o"
+  },
+  {
+    "title": "Golden Era Songs | Dil Mein Chhupake Pyar | Aan (1952) | Dilip Kumar | Rafi Saab",
+    "artist": "Shemaroo musics",
+    "videoId": "Vyg2TBUaoTM"
+  },
+  {
+    "title": "Mohd. Rafi Golden Song: Chal Ud Jaa Re Panchhi | Bhabhi (1957)",
+    "artist": "Shemaroo musics",
+    "videoId": "3-mpxSFmN3Q"
+  },
+  ]
+}

@@ -2,11 +2,11 @@
 
 import { useRef, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
-import MusicPlayer from "./component/MusicPlayer";
-import YoutubePlayer from "./component/YoutubePlayer";
-import { songs } from "./data/songs";
+import MusicPlayer from "../components/MusicPlayer";
+import YoutubePlayer from "../components/YoutubePlayer";
+import { songs } from "../data/songs";
 import Image from "next/image";
-import Header from "./component/Header";
+import Header from "../components/Header";
 
 type Player = Parameters<NonNullable<YouTubeProps["onReady"]>>[0]["target"];
 const YOUTUBE_PLAYING_STATE = 1;
