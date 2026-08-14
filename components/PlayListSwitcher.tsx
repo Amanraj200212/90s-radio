@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react';
 import { 
   DropdownMenu, 
   DropdownMenuContent, 
@@ -8,14 +7,16 @@ import {
   DropdownMenuItem, 
   DropdownMenuTrigger 
 } from './ui/dropdown-menu'
+import type { PlaylistName } from '@/data/songs';
+import { toast } from './ui/toast';
+import { Heart } from 'lucide-react';
 
-const PlayListSwitcher = () => {
-  const [playlist, setPlaylist] = useState("classical");
+type Props = {
+  playlist: PlaylistName;
+  onSwitch: (playlistName: PlaylistName) => void;
+};
 
-  const handleSwitch = (playlistName: string) => {
-    setPlaylist(playlistName);
-    console.log(playlistName,"playlist is playing");
-  }
+const PlayListSwitcher = ({ playlist, onSwitch }: Props) => {
   return (
       <DropdownMenu>
         <DropdownMenuTrigger>
@@ -29,24 +30,45 @@ const PlayListSwitcher = () => {
           <DropdownMenuGroup>
             <DropdownMenuItem 
               data-active={playlist === "classical"}
-              onClick={() => handleSwitch("classical")}
+              onClick={() => {
+                onSwitch("classical")
+                toast.add({
+                  type: 'success',
+                  title: "SWITCHED SUCCESSFULLY!",
+                  description: "A collection of timeless classical songs with beautiful melodies and soulful compositions.",
+                })
+              }}
               className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               {"Classical 90's"}
             </DropdownMenuItem>
             <DropdownMenuItem 
-              data-active={playlist === "romatics"}
-              onClick={() => handleSwitch("romatics")}
+              data-active={playlist === "romantic"}
+              onClick={() => {
+                onSwitch("romantic")
+                toast.add({
+                  type: 'success',
+                  title: "SWITCHED SUCCESSFULLY!",
+                  description: "A handpicked collection of romantic songs to set the your mood.",
+                })
+              }}
               className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               Romantic songs
             </DropdownMenuItem>
             <DropdownMenuItem 
               data-active={playlist === "trendy"}
-              onClick={() => handleSwitch("trendy")}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+              onClick={() => {
+                onSwitch("trendy")
+                toast.add({
+                  type: 'success',
+                  title: "SWITCHED SUCCESSFULLY!",
+                  description: "Listen to the seasonal songs according to our enviroment & Embrace your feelings.",
+                })
+              }}
+              className="cursor-pointer data-[active=true]:bg-[#BE3D34]/70 data-[active=true]:text-white"
             >
-              {"Trending one's"}
+              Aazadi special<Heart className='text-red-500 fill-red-500' />
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>

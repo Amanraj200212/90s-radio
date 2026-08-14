@@ -4,46 +4,60 @@ import { useRef, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import MusicPlayer from "../components/MusicPlayer";
 import YoutubePlayer from "../components/YoutubePlayer";
-import { songs } from "../data/songs";
+import { playlists, type PlaylistName } from "../data/songs";
 import Image from "next/image";
 import Header from "../components/Header";
 
 type Player = Parameters<NonNullable<YouTubeProps["onReady"]>>[0]["target"];
 const YOUTUBE_PLAYING_STATE = 1;
-const playlistIds = songs.map((song) => song.videoId);
 
 export default function Home() {
   const [player, setPlayer] = useState<Player | null>(null);
+  const [playlist, setPlaylist] = useState<PlaylistName>("classical");
   const [currentSong, setCurrentSong] = useState(0);
   const currentSongRef = useRef(0);
+  const currentPlaylist = playlists[playlist];
+  const playlistIds = currentPlaylist.map((song) => song.videoId);
 
   const setSongIndex = (index: number) => {
     if (index < 0) return;
 
-    const songIndex = (index + songs.length) % songs.length;
+    const songIndex = (index + currentPlaylist.length) % currentPlaylist.length;
 
     currentSongRef.current = songIndex;
     setCurrentSong(songIndex);
   };
 
-  //forchangesong
   const changeSong = (index: number) => {
     setSongIndex(index);
-    player?.playVideoAt(index);
+    player?.loadPlaylist(playlistIds, index);
+    player?.setLoop(true);
   };
 
   const nextSong = () => {
     const nextIndex =
-      (currentSongRef.current + 1) % songs.length;
+      (currentSongRef.current + 1) % currentPlaylist.length;
 
     changeSong(nextIndex);
   };
 
   const prevSong = () => {
     const prevIndex =
-      (currentSongRef.current - 1 + songs.length) % songs.length;
+      (currentSongRef.current - 1 + currentPlaylist.length) % currentPlaylist.length;
 
     changeSong(prevIndex);
+  };
+
+  const switchPlaylist = (playlistName: PlaylistName) => {
+    const nextPlaylist = playlists[playlistName];
+    const nextPlaylistIds = nextPlaylist.map((song) => song.videoId);
+
+    setPlaylist(playlistName);
+    currentSongRef.current = 0;
+    setCurrentSong(0);
+
+    player?.loadPlaylist(nextPlaylistIds, 0);
+    player?.setLoop(true);
   };
 
   return (
@@ -60,7 +74,7 @@ export default function Home() {
       <div className="grain" aria-hidden="true" />
 
       <div className="hero-content">
-        <Header />
+        <Header playlist={playlist} onPlaylistSwitch={switchPlaylist} />
 
         <section className="hero-title" aria-labelledby="radio-title">
           <p className="eyebrow">a radio for the after-school hours</p>
@@ -93,9 +107,9 @@ export default function Home() {
             player={player}
             onNext={nextSong}
             onPrev={prevSong}
-            title={songs[currentSong].title}
-            artist={songs[currentSong].artist}
-            videoId={songs[currentSong].videoId}
+            title={currentPlaylist[currentSong].title}
+            artist={currentPlaylist[currentSong].artist}
+            videoId={currentPlaylist[currentSong].videoId}
           />
         </div>
 
