@@ -2,13 +2,11 @@
 
 import { useRef, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
-import OnlineCount from "./component/OnlineCount";
 import MusicPlayer from "./component/MusicPlayer";
 import YoutubePlayer from "./component/YoutubePlayer";
 import { songs } from "./data/songs";
 import Image from "next/image";
-import CurrentTime from "./component/CurrentTime";
-import Link from "next/link";
+import Header from "./component/Header";
 
 type Player = Parameters<NonNullable<YouTubeProps["onReady"]>>[0]["target"];
 const YOUTUBE_PLAYING_STATE = 1;
@@ -62,21 +60,7 @@ export default function Home() {
       <div className="grain" aria-hidden="true" />
 
       <div className="hero-content">
-        <header className="topbar">
-          <CurrentTime />
-          <div className="font-bold"><OnlineCount /></div>
-
-          <div className="topbar-actions">
-            <Link  href="https://open.spotify.com" target="_blank" rel="noreferrer">
-              <span className="service-mark spotify-mark" aria-hidden="true">◔</span>
-              <span>Spotify ↗</span>
-            </Link>
-            <Link href="https://music.youtube.com" target="_blank" rel="noreferrer">
-              <span className="service-mark youtube-mark" aria-hidden="true">▶</span>
-              <span >YT Music ↗</span>
-            </Link>
-          </div>
-        </header>
+        <Header />
 
         <section className="hero-title" aria-labelledby="radio-title">
           <p className="eyebrow">a radio for the after-school hours</p>
