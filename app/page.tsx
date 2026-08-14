@@ -91,10 +91,10 @@ export default function Home() {
         <div className="hidden-player" aria-hidden="true">
           <YoutubePlayer
             videoId={playlistIds[0]}
-            playlistIds={playlistIds}
             onReady={(event) => {
               setPlayer(event.target);
               event.target.loadPlaylist(playlistIds, currentSongRef.current);
+              event.target.setLoop(true);
             }}
             onStateChange={(event) => {
               if (event.data === YOUTUBE_PLAYING_STATE) {
@@ -111,7 +111,6 @@ export default function Home() {
             onPrev={prevSong}
             title={songs[currentSong].title}
             artist={songs[currentSong].artist}
-            trackNumber={currentSong + 1}
             videoId={songs[currentSong].videoId}
           />
         </div>

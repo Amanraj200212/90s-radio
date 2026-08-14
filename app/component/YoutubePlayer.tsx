@@ -4,14 +4,12 @@ import YouTube, { YouTubeProps } from "react-youtube";
 
 type Props = {
   videoId: string;
-  playlistIds: string[];
   onReady?: YouTubeProps["onReady"];
   onStateChange?: YouTubeProps["onStateChange"];
 };
 
 const YoutubePlayer = ({
   videoId,
-  playlistIds,
   onReady,
   onStateChange,
 }: Props) => {
@@ -23,8 +21,6 @@ const YoutubePlayer = ({
       controls: 1,
       rel: 0,
       playsinline: 1,
-      loop: 1,
-      playlist: playlistIds.join(","),
     },
   };
 

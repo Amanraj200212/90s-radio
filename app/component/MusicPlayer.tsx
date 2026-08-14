@@ -12,7 +12,6 @@ type Props = {
   onPrev: () => void;
   title: string;
   artist: string;
-  trackNumber: number;
   videoId: string;
 };
 
@@ -25,7 +24,6 @@ export default function MusicPlayer({
   videoId,
 }: Props) {
   const [isPlaying, setIsPlaying] = useState(false);
-  // const [imageError, setIsImageError] = useState(false);
 
   //ask youtube is ideo playing or not
   useEffect(() => {
@@ -53,18 +51,6 @@ const togglePlayback = () => {
 
   return (
     <section className="music-player" aria-label="Music player">
-      {/* <div className="album-art" aria-hidden="true">
-        {!imageError && (
-          <Image
-            src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-            alt={title}
-            fill
-            onError={() => setIsImageError(true)}
-            className={`object-cover smooth-rotate ${isPlaying ? 'playing' : ''}`}
-          />
-        )}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/70 ring-2 ring-white/40"/>
-      </div> */}
       <MusicThumbnail 
         key={videoId}
         videoId={videoId} 
