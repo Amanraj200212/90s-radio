@@ -19,10 +19,18 @@ export default function Home() {
   const [currentSong, setCurrentSong] = useState(0);
   const currentSongRef = useRef(0);
 
+  const setSongIndex = (index: number) => {
+    if (index < 0) return;
+
+    const songIndex = (index + songs.length) % songs.length;
+
+    currentSongRef.current = songIndex;
+    setCurrentSong(songIndex);
+  };
+
   //forchangesong
   const changeSong = (index: number) => {
-    currentSongRef.current = index;
-    setCurrentSong(index);
+    setSongIndex(index);
     player?.playVideoAt(index);
   };
 
@@ -38,21 +46,6 @@ export default function Home() {
       (currentSongRef.current - 1 + songs.length) % songs.length;
 
     changeSong(prevIndex);
-  };
-
-  const syncCurrentSongFromPlayer = (youtubePlayer: Player) => {
-    const playlistIndex = youtubePlayer.getPlaylistIndex();
-
-    if (typeof playlistIndex !== "number" || playlistIndex < 0) {
-      return;
-    }
-
-    const nextIndex = playlistIndex % songs.length;
-
-    if (nextIndex !== currentSongRef.current) {
-      currentSongRef.current = nextIndex;
-      setCurrentSong(nextIndex);
-    }
   };
 
   return (
@@ -105,7 +98,7 @@ export default function Home() {
             }}
             onStateChange={(event) => {
               if (event.data === YOUTUBE_PLAYING_STATE) {
-                syncCurrentSongFromPlayer(event.target);
+                setSongIndex(event.target.getPlaylistIndex());
               }
             }}
           />
