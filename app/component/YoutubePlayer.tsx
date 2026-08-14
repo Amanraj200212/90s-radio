@@ -6,7 +6,6 @@ type Props = {
   videoId: string;
   playlistIds: string[];
   onReady?: YouTubeProps["onReady"];
-  onEnd?: YouTubeProps["onEnd"];
   onStateChange?: YouTubeProps["onStateChange"];
 };
 
@@ -14,7 +13,6 @@ const YoutubePlayer = ({
   videoId,
   playlistIds,
   onReady,
-  onEnd,
   onStateChange,
 }: Props) => {
   const options: YouTubeProps["opts"] = {
@@ -36,7 +34,6 @@ const YoutubePlayer = ({
         videoId={videoId}
         opts={options}
         onReady={onReady}
-        onEnd={onEnd}
         onStateChange={onStateChange}
         className="block h-full w-full"
         iframeClassName="h-full w-full"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import OnlineCount from "./component/OnlineCount";
 import MusicPlayer from "./component/MusicPlayer";
@@ -20,30 +20,28 @@ export default function Home() {
   const currentSongRef = useRef(0);
 
   //forchangesong
-  const changeSong = useCallback((index: number) => {
+  const changeSong = (index: number) => {
     currentSongRef.current = index;
     setCurrentSong(index);
     player?.playVideoAt(index);
-  }, [player]);
+  };
 
-  const nextSong = useCallback(() => {
+  const nextSong = () => {
     const nextIndex =
       (currentSongRef.current + 1) % songs.length;
 
     changeSong(nextIndex);
-  }, [changeSong]);
+  };
 
-  const prevSong = useCallback(() => {
+  const prevSong = () => {
     const prevIndex =
       (currentSongRef.current - 1 + songs.length) % songs.length;
 
     changeSong(prevIndex);
-  }, [changeSong]);
+  };
 
-  const syncCurrentSongFromPlayer = useCallback(() => {
-    if (!player) return;
-
-    const playlistIndex = player.getPlaylistIndex();
+  const syncCurrentSongFromPlayer = (youtubePlayer: Player) => {
+    const playlistIndex = youtubePlayer.getPlaylistIndex();
 
     if (typeof playlistIndex !== "number" || playlistIndex < 0) {
       return;
@@ -55,14 +53,7 @@ export default function Home() {
       currentSongRef.current = nextIndex;
       setCurrentSong(nextIndex);
     }
-  }, [player]);
-
-  useEffect(() => {
-    if (!player) return;
-
-    const interval = setInterval(syncCurrentSongFromPlayer, 1000);
-    return () => clearInterval(interval);
-  }, [player, syncCurrentSongFromPlayer]);
+  };
 
   return (
     <main className="isolate relative min-h-screen overflow-hidden bg-black">
@@ -114,7 +105,7 @@ export default function Home() {
             }}
             onStateChange={(event) => {
               if (event.data === YOUTUBE_PLAYING_STATE) {
-                syncCurrentSongFromPlayer();
+                syncCurrentSongFromPlayer(event.target);
               }
             }}
           />
