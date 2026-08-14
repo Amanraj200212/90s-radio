@@ -1,6 +1,6 @@
 "use client";
 
-import {useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import OnlineCount from "./component/OnlineCount";
 import MusicPlayer from "./component/MusicPlayer";
@@ -11,6 +11,8 @@ import CurrentTime from "./component/CurrentTime";
 import Link from "next/link";
 
 type Player = Parameters<NonNullable<YouTubeProps["onReady"]>>[0]["target"];
+const YOUTUBE_PLAYING_STATE = 1;
+const playlistIds = songs.map((song) => song.videoId);
 
 export default function Home() {
   const [player, setPlayer] = useState<Player | null>(null);
@@ -18,25 +20,49 @@ export default function Home() {
   const currentSongRef = useRef(0);
 
   //forchangesong
-  const changeSong = (index: number) => {
+  const changeSong = useCallback((index: number) => {
     currentSongRef.current = index;
     setCurrentSong(index);
-    player?.loadVideoById(songs[index].videoId);
-  };
+    player?.playVideoAt(index);
+  }, [player]);
 
-  const nextSong = () => {
+  const nextSong = useCallback(() => {
     const nextIndex =
       (currentSongRef.current + 1) % songs.length;
 
     changeSong(nextIndex);
-  };
+  }, [changeSong]);
 
-const prevSong = () => {
-  const prevIndex =
-    (currentSongRef.current - 1 + songs.length) % songs.length;
+  const prevSong = useCallback(() => {
+    const prevIndex =
+      (currentSongRef.current - 1 + songs.length) % songs.length;
 
-  changeSong(prevIndex);
-};
+    changeSong(prevIndex);
+  }, [changeSong]);
+
+  const syncCurrentSongFromPlayer = useCallback(() => {
+    if (!player) return;
+
+    const playlistIndex = player.getPlaylistIndex();
+
+    if (typeof playlistIndex !== "number" || playlistIndex < 0) {
+      return;
+    }
+
+    const nextIndex = playlistIndex % songs.length;
+
+    if (nextIndex !== currentSongRef.current) {
+      currentSongRef.current = nextIndex;
+      setCurrentSong(nextIndex);
+    }
+  }, [player]);
+
+  useEffect(() => {
+    if (!player) return;
+
+    const interval = setInterval(syncCurrentSongFromPlayer, 1000);
+    return () => clearInterval(interval);
+  }, [player, syncCurrentSongFromPlayer]);
 
   return (
     <main className="isolate relative min-h-screen overflow-hidden bg-black">
@@ -80,10 +106,17 @@ const prevSong = () => {
 
         <div className="hidden-player" aria-hidden="true">
           <YoutubePlayer
-            key={currentSong}
-            videoId={songs[currentSong].videoId}
-            onReady={(event) => setPlayer(event.target)}
-            onEnd={nextSong}
+            videoId={playlistIds[0]}
+            playlistIds={playlistIds}
+            onReady={(event) => {
+              setPlayer(event.target);
+              event.target.loadPlaylist(playlistIds, currentSongRef.current);
+            }}
+            onStateChange={(event) => {
+              if (event.data === YOUTUBE_PLAYING_STATE) {
+                syncCurrentSongFromPlayer();
+              }
+            }}
           />
         </div>
 
