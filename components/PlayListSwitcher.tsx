@@ -68,7 +68,7 @@ const PlayListSwitcher = ({ playlist, onSwitch }: Props) => {
               }}
               className="cursor-pointer data-[active=true]:bg-[#BE3D34]/70 data-[active=true]:text-white"
             >
-              Trendy Songs
+              Insomanic Nights
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>

@@ -3980,6 +3980,11 @@ export const playlists = {
       "videoId": "Ez9P20D1m9I"
     },
     {
+      "title": "The Local Train - Aalas Ka Pedh - Choo Lo",
+      "artist": "The Local Train",
+      "videoId": "sFMRqxCexDk"
+    },
+    {
       "title": "LYRICAL: DIL JAANIYE | Khandaani Shafakhana | Sonakshi S, Priyansh | Jubin N ,Tulsi Kumar,Payal Dev",
       "artist": "T-Series",
       "videoId": "pDRkHkmHdx0"
@@ -4359,9 +4364,408 @@ export const playlists = {
       "artist": "Sheheryar Rehan",
       "videoId": "zaFGQEIcetM"
     },
+    {
+      "title": "Channa Ve - Full Video | Bhoot - Part One: The Haunted Ship",
+      "artist": "Zee Music Company",
+      "videoId": "se9DDAwwGQY"
+    },
+    {
+      "title": "Twin Strings Lounge - Sufiyana Sham | Season 1 • Ep 1",
+      "artist": "TwinStrings",
+      "videoId": "VlyLyBqNvVE"
+    },
+    {
+      "title": "Raabta (Kehte Hain Khuda) Full Song With Lyrics",
+      "artist": "T-Series",
+      "videoId": "zlt38OOqwDc"
+    },
+    {
+      "title": ";Maine Khud Ko Ragini MMS 2 | Sunny Leone | Arijit Singh | Pritam | Amitabh B | Manoj M",
+      "artist": "T-Series",
+      "videoId": "xrCAIMx3V90"
+    },
+    {
+      "title": "Tainu Khabar Nahi - Arijit Singh | Munjya ",
+      "artist": "T-Series",
+      "videoId": "6d5SS0gS5bU"
+    },
+    {
+      "title": "Saude Bazi | Aakrosh | Ajay Devgn, Bipasha Basu ",
+      "artist": "T-Series",
+      "videoId": "CxAWKewvooo"
+    },
+    {
+      "title": " Main Rang Sharbaton Ka | Arijit Singh | Phata Poster Nikhla Hero",
+      "artist": "Gaane Filmi",
+      "videoId": "RBCk1SyC1PA"
+    },
+    {
+      "title": "Meena Bazaar - Keshav Tyohar | Official Music Video",
+      "artist": "Keshav Tyohar",
+      "videoId": "4S903k-BJYU"
+    },
+    {
+      "title": "Meena Bazaar - Keshav Tyohar | Official Music Video",
+      "artist": "Keshav Tyohar",
+      "videoId": "4S903k-BJYU"
+    },
   ],
   trendy: [
-    
+  {
+    "title": "'Tu Chahiye' FULL VIDEO Song - Atif Aslam Pritam | Bajrangi Bhaijaan | Salman Khan, Kareena Kapoor",
+    "artist": "T-Series",
+    "videoId": "zuvla6ABKbs"
+  },
+  {
+    "title": "Ik Vaari Aa Full Song | Raabta | Sushant Singh Rajput & Kriti Sanon | Pritam Arijit Singh Amitabh B",
+    "artist": "T-Series",
+    "videoId": "zXLgYBSdv74"
+  },
+  {
+    "title": "Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir",
+    "artist": "SonyMusicIndiaVEVO",
+    "videoId": "ycS5PagXvhQ"
+  },
+  {
+    "title": "Naina Da Kya Kasoor - Lyrical | AndhaDhun | Ayushmann Khurrana | Radhika Apte | Amit Trivedi",
+    "artist": "Zee Music Company",
+    "videoId": "WfDFWLZgQwE"
+  },
+  {
+    "title": "Lyrical Video: Dildara Song | Ra.One | ShahRukh Khan, Kareena Kapoor",
+    "artist": "T-Series",
+    "videoId": "gQ5qVtoLMk4"
+  },
+  {
+    "title": "LYRICAL: Kaise Hua | Kabir Singh | Shahid K, Kiara A, Sandeep V | Vishal Mishra, Manoj Muntashir",
+    "artist": "T-Series",
+    "videoId": "WWXm39leYew"
+  },
+  {
+    "title": "Ambarsariya (Lyrical) Fukrey | Sona Mohapatra | Pulkit Samrat, Priya Anand | Ram Sampath",
+    "artist": "T-Series",
+    "videoId": "oMesPehN_Do"
+  },
+  {
+    "title": "Yeh Fitoor Mera - Full Video | Fitoor | Aditya Roy Kapur, Katrina Kaif | Arijit Singh | Amit Trivedi",
+    "artist": "Zee Music Company",
+    "videoId": "ccw-bhwtLTw"
+  },
+  {
+    "title": "Tera Deedar Hua - Full Song | Emraan Hashmi | Esha Gupta | Pritam | Javed Ali",
+    "artist": "SonyMusicIndiaVEVO",
+    "videoId": "i_HFdi1xxFM"
+  },
+  {
+    "title": "Chaand Baaliyan – Aditya A. | Trending Song | Official Video",
+    "artist": "Sony Music India",
+    "videoId": "7c3-Gei5j4w"
+  },
+  {
+    "title": "Chahun Main Ya Naa (Lyrical) | Aashiqui 2 | Arijit Singh | Aditya K, Shraddha K | Palak M",
+    "artist": "T-Series",
+    "videoId": "jazrixVDB3o"
+  },
+  {
+    "title": "Tum Se Hi Lyrcial | Jab We Met | Kareena Kapoor, Shahid Kapoor | Pritam | Mohit Chauhan",
+    "artist": "T-Series",
+    "videoId": "Cb6wuzOurPc"
+  },
+  {
+    "title": "'Sooraj Dooba Hain' FULL VIDEO SONG | Arijit singh Aditi Singh Sharma | T-SERIES",
+    "artist": "T-Series",
+    "videoId": "nJZcbidTutE"
+  },
+  {
+    "title": "Bulleya | Full Song | Sultan | Salman Khan, Anushka Sharma | Papon | Vishal & Shekhar | Irshad Kamil",
+    "artist": "YRF",
+    "videoId": "a9Hxkc9YxGE"
+  },
+  {
+    "title": "Channa Ve - Full Video | Bhoot - Part One: The Haunted Ship | Vicky K & Bhumi P | Akhil & Mansheel",
+    "artist": "Zee Music Company",
+    "videoId": "se9DDAwwGQY"
+  },
+  {
+    "title": "Mast Magan FULL Video Song | 2 States | Arijit Singh | Arjun Kapoor, Alia Bhatt",
+    "artist": "T-Series",
+    "videoId": "xitd9mEZIHk"
+  },
+  {
+    "title": "Titli Chennai Express Full Video Song | Shahrukh Khan, Deepika Padukone",
+    "artist": "T-Series",
+    "videoId": "V8zXLMIjlcw"
+  },
+  {
+    "title": "Aditya Rikhari - SAMJHO NA ( NASAMAJH )",
+    "artist": "Aditya Rikhari",
+    "videoId": "MhXCj8E9CZU"
+  },
+  {
+    "title": "MATARGASHTI full VIDEO Song | TAMASHA Songs | Ranbir Kapoor, Deepika Padukone | T-Series",
+    "artist": "T-Series",
+    "videoId": "6vKucgAeF_Q"
+  },
+  {
+    "title": "The Local Train - Aaoge Tum Kabhi (Official)",
+    "artist": "The Local Train",
+    "videoId": "i96UO8-GFvw"
+  },
+  {
+    "title": "Raabta (Kehte Hain Khuda) Full Song With Lyrics | Agent Vinod | Saif Ali Khan, Kareena Kapoor,Pritam",
+    "artist": "T-Series",
+    "videoId": "zlt38OOqwDc"
+  },
+  {
+    "title": "Lyrical | Tum Ho Toh Song | Saiyaara | Ahaan, Aneet | Vishal Mishra, Hansika Pareek | Raj Shekhar",
+    "artist": "YRF",
+    "videoId": "8SYPKQMW_2Q"
+  },
+  {
+    "title": "ILAHI FULL SONG WITH LYRICS YEH JAWAANI HAI DEEWANI | PRITAM | RANBIR KAPOOR, DEEPIKA PADUKONE",
+    "artist": "T-Series",
+    "videoId": "AicKz1ISNjU"
+  },
+  {
+    "title": "Ek Ladki Ko Dekha Toh Aisa Laga | Title Song | Anil | Sonam | Rajkummar Rao | Juhi | Darshan |Rochak",
+    "artist": "Saregama Music",
+    "videoId": "IAIGnS9BPKs"
+  },
+  {
+    "title": "Full Song: Pehla Pyaar | Kabir Singh | Shahid Kapoor, Kiara Advani | Armaan Malik | Vishal Mishra",
+    "artist": "T-Series",
+    "videoId": "B7SkAq_94J8"
+  },
+  {
+    "title": "Zaalima - Lyrical | Raees | Shah Rukh Khan | Arijit Singh & Harshdeep K | JAM8-Pritam",
+    "artist": "Zee Music Company",
+    "videoId": "hhdSyBHuI88"
+  },
+  {
+    "title": "Makhna - Lyrical | Drive| Sushant S Rajput Jacqueline Fernandez| Yasser Desai, Tanishk B",
+    "artist": "Zee Music Company",
+    "videoId": "5D8wwE4_3sE"
+  },
+  {
+    "title": "Locha E Ulfat FULL Video Song | 2 States | Arjun Kapoor, Alia Bhatt",
+    "artist": "T-Series",
+    "videoId": "G6RR2_NQ530"
+  },
+  {
+    "title": "Kinna Sona Full AUDIO Song - Sunil Kamath | Bhaag Johnny | Kunal Khemu | T-Series",
+    "artist": "T-Series",
+    "videoId": "5qIJ7tQ2QbM"
+  },
+  {
+    "title": "Tera Hone Laga Hoon Full Song Video - Ajab Prem Ki Ghazab Kahani | Atif & Alisha Chinai | Pritam",
+    "artist": "Tips Official",
+    "videoId": "useznoRhrWU"
+  },
+  {
+    "title": "Tu Mera Hero",
+    "artist": "Pritam - Topic",
+    "videoId": "TR3Ifjpf7W8"
+  },
+  {
+    "title": "O Meri Laila | Laila Majnu | Jyotica Tangri | Avinash Tiwary & Tripti Dimri | Joi, Irshad",
+    "artist": "Zee Music Company",
+    "videoId": "49x8GA2axfc"
+  },
+  {
+    "title": "Heeriye (Official Video) Jasleen Royal ft Arijit Singh| Dulquer Salmaan| Aditya Sharma |Taani Tanvir",
+    "artist": "Jasleen Royal",
+    "videoId": "RLzC55ai0eo"
+  },
+  {
+    "title": "\"Jhak Maar Ke Full Song Desi Boyz\" | Deepika Padukone | John Abraham",
+    "artist": "T-Series",
+    "videoId": "R5CxtjmrIE4"
+  },
+  {
+    "title": "Qaafirana - Lyrical |  Kedarnath | Sushant S Rajput | Sara Ali Khan | Arijit Singh & Nikhita| Amit T",
+    "artist": "Zee Music Company",
+    "videoId": "pKwNDsBxXRA"
+  },
+  {
+    "title": "Atif Aslam: Pehli Dafa Song (Video) | Ileana D’Cruz | Latest Hindi Song 2017 | T-Series",
+    "artist": "T-Series",
+    "videoId": "SxTYjptEzZs"
+  },
+  {
+    "title": "Shaayraana - Lyrical | Holiday | Arijit Singh | Akshay Kumar, Sonakshi Sinha | Pritam | Irshad Kamil",
+    "artist": "Zee Music Company",
+    "videoId": "EbVTWV_O7XU"
+  },
+  {
+    "title": "Dheere Dheere Se Meri Zindagi Video Song (OFFICIAL) Hrithik Roshan, Sonam Kapoor | Yo Yo Honey Singh",
+    "artist": "T-Series",
+    "videoId": "nCD2hj6zJEc"
+  },
+  {
+    "title": "O Sanam - Akhil Sachdeva ft Sara Gurpal || FanTiger Music NFT's",
+    "artist": "Akhil Sachdeva Nasha",
+    "videoId": "FPoDwu3odT8"
+  },
+  {
+    "title": "Khabar Nahi Full Video - Dostana|John,Abhishek,Priyanka|Shreya Ghoshal|Amanat Ali",
+    "artist": "SonyMusicIndiaVEVO",
+    "videoId": "eIjFX9fVgv0"
+  },
+  {
+    "title": "Sau Aasmaan - Lyrical | Baar Baar Dekho | Sidharth Malhotra | Katrina Kaif",
+    "artist": "Zee Music Company",
+    "videoId": "qQhSr0kDVFw"
+  },
+  {
+    "title": "Aaj Se Teri - Lyrical | Padman | Akshay Kumar & Radhika Apte | Arijit Singh | Amit Trivedi",
+    "artist": "Zee Music Company",
+    "videoId": "NFsEqOBG51M"
+  },
+  {
+    "title": "Aarzu (with Asim Azhar) Official Music Video | Asim Azhar, Noor, Khan, Madhurxo",
+    "artist": "Asim Azhar",
+    "videoId": "N39UtM_6RfY"
+  },
+  {
+    "title": "Full Song: KHAIRIYAT (BONUS TRACK) | CHHICHHORE | Sushant, Shraddha | Pritam, Amitabh B|Arijit Singh",
+    "artist": "T-Series",
+    "videoId": "hoNb6HuNmU0"
+  },
+  {
+    "title": "Chor Bazari | Full Audio Song | Love Aaj Kal | Saif Ali Khan & Deepika Padukone",
+    "artist": "Sony Music India",
+    "videoId": "hsTQKwZEMQE"
+  },
+  {
+    "title": "\"Subha Hone Na De Full Song\"| Desi Boyz | Akshay Kumar ,John Abraham | Pritam |  Mika Singh, Kumaar",
+    "artist": "T-Series",
+    "videoId": "Y7G-tYRzwYY"
+  },
+  {
+    "title": "Tainu Khabar Nahi - Arijit Singh | Munjya | Sharvari, Abhay Verma| Sachin-Jigar,Amitabh Bhattacharya",
+    "artist": "Zee Music Company",
+    "videoId": "6d5SS0gS5bU"
+  },
+  {
+    "title": "Aadat Se Majboor - Full Song | Ladies vs Ricky Bahl | Ranveer Singh | Anushka Sharma | Benny Dayal",
+    "artist": "YRF",
+    "videoId": "sB-S5LBU1eA"
+  },
+  {
+    "title": "Lyrical: Saude Bazi | Aakrosh | Ajay Devgn, Bipasha Basu | Pritam | Anupam Amod | Irshad Kamil",
+    "artist": "T-Series Bollywood Classics",
+    "videoId": "CxAWKewvooo"
+  },
+  {
+    "title": "Second Hand Jawaani - Lyrical Video | Saif Ali Khan, Deepika Padukone, Diana Penty | Cocktail",
+    "artist": "SonyMusicIndiaVEVO",
+    "videoId": "cBZlgfC3oVA"
+  },
+  {
+    "title": "Nashe Si Chadh Gayi | Full Song | Befikre, Ranveer Singh, Vaani Kapoor, Arijit Singh, Vishal-Shekhar",
+    "artist": "YRF",
+    "videoId": "HoCwa6gnmM0"
+  },
+  {
+    "title": "Dil Dooba Lyrical Video Song | Khakee | Sonu Nigam, Shreya Ghoshal | Aishwarya Rai, Akshaye Kumar",
+    "artist": "T-Series Bollywood Classics",
+    "videoId": "SAiyopkF22M"
+  },
+  {
+    "title": "Tu Mere Agal Bagal Hai - Phata Poster Nikhla Hero | Shahid Kapoor, Ileana |Mika Singh | Pritam",
+    "artist": "Tips Official",
+    "videoId": "vcH5RCEzyD0"
+  },
+  {
+    "title": "Haareya Song | Meri Pyaari Bindu | Ayushmann, Parineeti | Arijit Singh | Sachin-Jigar, Priya Saraiya",
+    "artist": "YRF",
+    "videoId": "TyMUY2CDrjc"
+  },
+  {
+    "title": "Do You Know Housefull 2 Full Video Song (official ) Akshay Kumar, Asin",
+    "artist": "T-Series",
+    "videoId": "5lf_Ujt0BXo"
+  },
+  {
+    "title": "\"Allah Maaf Kare Full Song Desi Boyz\" Feat. Akshay Kumar, Chitrangada Singh",
+    "artist": "T-Series",
+    "videoId": "sm2hNJ9c8M8"
+  },
+  {
+    "title": "Vishal & Shekhar, Shahid Mallya, Nisha Mascarenhas, Marianne D'cruz Aiman - Kukkad",
+    "artist": "Sony Music India",
+    "videoId": "1Na8nKEUjYI"
+  },
+  {
+    "title": "Pungi - Video Song | Agent Vinod | Mika Singh | Pritam | Saif Ali Khan, Kareena Kapoor",
+    "artist": "T-Series Bollywood Classics",
+    "videoId": "rrhiFrEcaqQ"
+  },
+  {
+    "title": "Naach Meri Jaan - Full Song Video | Salman Khan | Pritam",
+    "artist": "SonyMusicIndiaVEVO",
+    "videoId": "gwa2Os2LbRA"
+  },
+  {
+    "title": "Palat Tera Hero Idhar Hai (Full Video) Song Main Tera Hero | Arijit Singh | Varun Dhawan",
+    "artist": "T-Series",
+    "videoId": "9vkcYxbGdTE"
+  },
+  {
+    "title": "Besharmi Ki Height | Full Song with Lyrics | Main Tera Hero | Varun Dhawan, Nargis Fakhri",
+    "artist": "T-Series",
+    "videoId": "ln8KreDppvI"
+  },
+  {
+    "title": "Bachna Ae Haseeno Title Song | Ranbir, Deepika, Bipasha, Minissha | Kishore Kumar | Vishal & Shekhar",
+    "artist": "YRF",
+    "videoId": "k4PMUZ055vc"
+  },
+  {
+    "title": "\"Aapka Kya Hoga Janabe Ali\" (Dhanno) Housefull Full Song | Akshay Kumar | Mika Singh",
+    "artist": "Bollywood Dhun",
+    "videoId": "duWmhex_Ps8"
+  },
+  {
+    "title": "Lyrical: O Bekhabar | Action Replayy | Akshay Kumar,Aishwarya Ray Bachchan | Shreya Ghoshal | Pritam",
+    "artist": "T-Series",
+    "videoId": "yidaL9xDlk8"
+  },
+  {
+    "title": "The Jawaani Song - Student Of The Year 2 | Tiger Shroff, Tara & Ananya| Vishal & Shekhar | RD Burman",
+    "artist": "Zee Music Company",
+    "videoId": "osBCBg8WAsM"
+  },
+  {
+    "title": "Tukur Tukur - Dilwale | Shah Rukh Khan | Kajol | Varun | Kriti | Official New Song Video 2015",
+    "artist": "Sony Music India",
+    "videoId": "0-ggsgFh5TI"
+  },
+  {
+    "title": "The Humma Song – OK Jaanu | Shraddha Kapoor | Aditya Roy Kapur | @ARRahman, Badshah, Tanishk",
+    "artist": "Sony Music India",
+    "videoId": "1tVL11ULjYY"
+  },
+  {
+    "title": "Aaj Din Chadheya - Lyrical Video | Saif Ali Khan, Deepika P | Love Aaj Kal | Rahat Fateh Ali Khan",
+    "artist": "Sony Music India",
+    "videoId": "IImcBEHuDRI"
+  },
+  {
+    "title": "Pehli Nazar Mein Kaise Jaado Kar Diya | Atif Aslam Hits | Race I Akshaye, Bipasha & Saif Ali",
+    "artist": "Tips Official",
+    "videoId": "BadBAMnPX0I"
+  },
+  {
+    "title": "Dagabaaz Re Dabangg 2 Full Video Song ᴴᴰ | Salman Khan, Sonakshi Sinha",
+    "artist": "T-Series",
+    "videoId": "0KozfDYK1EU"
+  },
+  {
+    "title": "Afghan Jalebi (Ya Baba) FULL VIDEO Song | Phantom | Saif Ali Khan Katrina Kaif Pritam Asrar T-Series",
+    "artist": "T-Series",
+    "videoId": "zC3UbTf4qrM"
+  } 
   ]
 }
 
