@@ -68,7 +68,7 @@ const PlayListSwitcher = ({ playlist, onSwitch }: Props) => {
               }}
               className="cursor-pointer data-[active=true]:bg-[#BE3D34]/70 data-[active=true]:text-white"
             >
-              Aazadi special<Heart className='text-red-500 fill-red-500' />
+              Trendy Songs
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
