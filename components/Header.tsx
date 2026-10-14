@@ -17,11 +17,15 @@ type Props = {
 const Header = ({ playlist, onPlaylistSwitch, favoritesCount, player }: Props) => {
   return (
     <header className="topbar">
-      <CurrentTime />
+      <div className="header-clock">
+        <CurrentTime />
+      </div>
       <div className="font-bold"><OnlineCount /></div>
-      <div className="flex items-center gap-6">
+      <div className="header-actions flex items-center gap-6">
         <PlayListSwitcher playlist={playlist} onSwitch={onPlaylistSwitch} favoritesCount={favoritesCount} />
-        <SleepTimer player={player} />
+        <div className="header-sleep-timer">
+          <SleepTimer player={player} />
+        </div>
       </div>
     </header>
   )

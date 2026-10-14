@@ -38,7 +38,7 @@ const PlayListSwitcher = ({ playlist, onSwitch, favoritesCount }: Props) => {
                   description: "A collection of timeless classical songs with beautiful melodies and soulful compositions.",
                 })
               }}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+              className="cursor-pointer text-[#ae2920] font-bold data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               {"Classical 90's"}
             </DropdownMenuItem>
@@ -54,7 +54,7 @@ const PlayListSwitcher = ({ playlist, onSwitch, favoritesCount }: Props) => {
                     : "Tap the heart on a song to add it to your favorites.",
                 });
               }}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+              className="cursor-pointer text-[#ae2920] font-bold data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               Favorites {favoritesCount > 0 ? `(${favoritesCount})` : ""}
             </DropdownMenuItem>
@@ -68,7 +68,7 @@ const PlayListSwitcher = ({ playlist, onSwitch, favoritesCount }: Props) => {
                   description: "A handpicked collection of romantic songs to set the your mood.",
                 })
               }}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+              className="cursor-pointer text-[#ae2920] font-bold data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               Romantic songs
             </DropdownMenuItem>
@@ -82,7 +82,7 @@ const PlayListSwitcher = ({ playlist, onSwitch, favoritesCount }: Props) => {
                   description: "Listen to the seasonal songs according to our enviroment & Embrace your feelings.",
                 })
               }}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34]/70 data-[active=true]:text-white"
+              className="cursor-pointer text-[#ae2920] font-bold data-[active=true]:bg-[#BE3D34]/70 data-[active=true]:text-white"
             >
               Insomanic Nights
             </DropdownMenuItem>

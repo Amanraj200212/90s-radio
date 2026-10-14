@@ -57,7 +57,7 @@ export default function SleepTimer({ player }: Props) {
             <DropdownMenuItem
               key={minutes}
               onClick={() => startTimer(minutes)}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+              className="cursor-pointer text-[#ae2920] font-bold data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               {minutes} minutes
             </DropdownMenuItem>
@@ -65,9 +65,9 @@ export default function SleepTimer({ player }: Props) {
           {remaining !== null && (
             <DropdownMenuItem
               onClick={cancelTimer}
-              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+              className="cursor-pointer text-[#ae2920] font-bold data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
-              Cancel timer
+              Cancel Timer
             </DropdownMenuItem>
           )}
         </DropdownMenuGroup>

@@ -145,6 +145,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 620px) {
   .hero-content { padding: 1.25rem 1.1rem; }
   .topbar { font-size: .69rem; }
+  .header-clock { display: none; }
+  .header-actions { display: contents; }
+  .header-sleep-timer { position: static; }
+  .topbar { justify-content: space-between; gap: 0; }
   .topbar-actions { gap: .65rem; }
   .topbar-actions a { gap: .25rem; }
   .topbar-actions a span:last-child { display: none; }
