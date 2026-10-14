@@ -4770,3 +4770,5 @@ export const playlists = {
 }
 
 export type PlaylistName = keyof typeof playlists;
+export type Song = { title: string; artist: string; videoId: string };
+export type PlaylistSelection = PlaylistName | "favorites";

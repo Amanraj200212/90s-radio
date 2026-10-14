@@ -7,16 +7,16 @@ import {
   DropdownMenuItem, 
   DropdownMenuTrigger 
 } from './ui/dropdown-menu'
-import type { PlaylistName } from '@/data/songs';
+import type { PlaylistSelection } from '@/data/songs';
 import { toast } from './ui/toast';
-import { Heart } from 'lucide-react';
 
 type Props = {
-  playlist: PlaylistName;
-  onSwitch: (playlistName: PlaylistName) => void;
+  playlist: PlaylistSelection;
+  onSwitch: (playlistName: PlaylistSelection) => void;
+  favoritesCount: number;
 };
 
-const PlayListSwitcher = ({ playlist, onSwitch }: Props) => {
+const PlayListSwitcher = ({ playlist, onSwitch, favoritesCount }: Props) => {
   return (
       <DropdownMenu>
         <DropdownMenuTrigger>
@@ -41,6 +41,22 @@ const PlayListSwitcher = ({ playlist, onSwitch }: Props) => {
               className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
             >
               {"Classical 90's"}
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              data-active={playlist === "favorites"}
+              onClick={() => {
+                onSwitch("favorites");
+                toast.add({
+                  type: favoritesCount ? "success" : "error",
+                  title: favoritesCount ? "FAVORITES PLAYING" : "NO FAVORITES YET",
+                  description: favoritesCount
+                    ? `Playing your ${favoritesCount} favorite ${favoritesCount === 1 ? "song" : "songs"}.`
+                    : "Tap the heart on a song to add it to your favorites.",
+                });
+              }}
+              className="cursor-pointer data-[active=true]:bg-[#BE3D34] data-[active=true]:text-white"
+            >
+              Favorites {favoritesCount > 0 ? `(${favoritesCount})` : ""}
             </DropdownMenuItem>
             <DropdownMenuItem 
               data-active={playlist === "romantic"}

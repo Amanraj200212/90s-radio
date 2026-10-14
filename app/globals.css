@@ -111,6 +111,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .album-art { position: relative; display: grid; place-items: center; width: clamp(3.7rem, 7.4vw, 5rem); aspect-ratio: 1; overflow: hidden; flex: none; border: 2px solid rgba(255, 248, 233, .72); border-radius: 50%; background: radial-gradient(circle at 50% 50%, #f8bd79 0 8%, #5c273b 9% 12%, transparent 13%), conic-gradient(from 35deg, #e3df91, #d95b4c, #5f7c73, #e4aa6f, #813747, #e3df91); box-shadow: inset 0 0 0 .36rem rgba(43, 33, 39, .22), 0 .3rem .9rem rgba(47, 29, 28, .28); color: var(--cream); font-family: Georgia, serif; }
 
 .now-playing { margin: 0 0 .12rem; color: rgba(255, 248, 233, .7); font-size: .56rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.track-heading { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
+.favorite-button { display: grid; place-items: center; width: 2rem; height: 2rem; flex: none; border: 0; border-radius: 50%; background: rgba(53, 28, 34, .22); color: var(--cream); cursor: pointer; transition: transform .2s ease, color .2s ease, background .2s ease; }
+.favorite-button:hover { transform: scale(1.08); background: rgba(53, 28, 34, .38); }
+.favorite-button[aria-pressed="true"] { color: #ffd6d1; }
+.favorite-button svg { width: 1.15rem; height: 1.15rem; }
+.sleep-timer { position: relative; display: flex; align-items: center; gap: .4rem; color: var(--cream); }
+.sleep-timer-select-wrap { display: inline-flex; align-items: center; gap: .35rem; color: inherit; }
+.sleep-timer-select-wrap > svg { width: .9rem; height: .9rem; flex: none; }
+.sleep-timer-select { max-width: 8rem; border: 0; outline: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.sleep-timer-select option { background: #53272b; color: var(--cream); }
+.sleep-timer-countdown { color: inherit; font-size: .72rem; font-variant-numeric: tabular-nums; }
+.sleep-timer-cancel { display: grid; place-items: center; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.sleep-timer-cancel svg { width: .8rem; height: .8rem; }
 .track-heading h2 { overflow: hidden; margin: 0; color: var(--cream); font-size: clamp(.82rem, 1.8vw, 1rem); font-weight: 800; text-overflow: ellipsis; white-space: nowrap; }
 .track-heading p:not(.now-playing) { overflow: hidden; margin: .15rem 0 0; color: rgba(255, 248, 233, .72); font-size: clamp(.68rem, 1.5vw, .8rem); text-overflow: ellipsis; white-space: nowrap; }
 .track-count { flex: none; color: rgba(255, 248, 233, .64); font-size: .67rem; font-weight: 800; letter-spacing: .09em; }

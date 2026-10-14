@@ -1,28 +1,29 @@
 import CurrentTime from './CurrentTime'
 import OnlineCount from './OnlineCount'
-import Link from 'next/link'
 import PlayListSwitcher from './PlayListSwitcher'
-import type { PlaylistName } from '@/data/songs'
+import type { PlaylistSelection } from '@/data/songs'
+import type { YouTubeProps } from 'react-youtube'
+import SleepTimer from './SleepTimer'
+
+type Player = Parameters<NonNullable<YouTubeProps['onReady']>>[0]['target'] | null
 
 type Props = {
-  playlist: PlaylistName;
-  onPlaylistSwitch: (playlistName: PlaylistName) => void;
+  playlist: PlaylistSelection;
+  onPlaylistSwitch: (playlistName: PlaylistSelection) => void;
+  favoritesCount: number;
+  player: Player;
 };
 
-const Header = ({ playlist, onPlaylistSwitch }: Props) => {
+const Header = ({ playlist, onPlaylistSwitch, favoritesCount, player }: Props) => {
   return (
     <header className="topbar">
-          <CurrentTime />
-          <div className="font-bold"><OnlineCount /></div>
-
-          <div className=" flex items-center gap-6">
-            <PlayListSwitcher playlist={playlist} onSwitch={onPlaylistSwitch} />
-            <Link href="https://music.youtube.com" className='hidden md:inline-flex' target="_blank" rel="noreferrer">
-              <span className="service-mark youtube-mark mr-2" aria-hidden="true">▶</span>
-              <span >YT Music ↗</span>
-            </Link>
-          </div>
-        </header>
+      <CurrentTime />
+      <div className="font-bold"><OnlineCount /></div>
+      <div className="flex items-center gap-6">
+        <PlayListSwitcher playlist={playlist} onSwitch={onPlaylistSwitch} favoritesCount={favoritesCount} />
+        <SleepTimer player={player} />
+      </div>
+    </header>
   )
 }
 

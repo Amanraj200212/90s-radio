@@ -1,6 +1,6 @@
 "use client";
 
-import { Pause, Play, SkipBack, SkipForward } from "lucide-react";
+import { Heart, Pause, Play, SkipBack, SkipForward } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { YouTubeProps } from "react-youtube";
 import ProgressBar from "./ProgressBar";
@@ -13,6 +13,8 @@ type Props = {
   title: string;
   artist: string;
   videoId: string;
+  isFavorite: boolean;
+  onToggleFavorite: () => void;
 };
 
 export default function MusicPlayer({
@@ -22,6 +24,8 @@ export default function MusicPlayer({
   title,
   artist,
   videoId,
+  isFavorite,
+  onToggleFavorite,
 }: Props) {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -65,6 +69,16 @@ const togglePlayback = () => {
             <h2>{title?.substring(0, 50)}...</h2>
             <p>{artist}</p>
           </div>
+          <button
+            type="button"
+            onClick={onToggleFavorite}
+            aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
+            aria-pressed={isFavorite}
+            title={isFavorite ? "Remove from favorites" : "Add to favorites"}
+            className="favorite-button"
+          >
+            <Heart fill={isFavorite ? "currentColor" : "none"} />
+          </button>
         </div>
 
         <ProgressBar player={player}/>
